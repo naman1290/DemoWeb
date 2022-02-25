@@ -1,0 +1,85 @@
+body
+{
+    margin: auto;
+    padding: auto;
+    align-items: left ;
+    height: auto;
+    background-blend-mode: screen;
+    background-color: #112c38;
+    background-image:url(PORTILLO2.jpg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+ul
+{
+    list-style-type: square;
+    position: sticky;
+    margin: 30px;
+    padding-left: 800px;
+    display: flex;
+}
+ul li
+{
+    list-style:none;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li a
+{
+    display:inline-flex;
+    position:sticky;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    color:#fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+ul:hover li a
+{
+    transform: scale(1.5);
+    opacity: .2;
+    filter:blur(5px); 
+}
+ul li a:hover
+{
+    transform: scale(1.5);
+    opacity: 2;
+    filter: blur(0);
+}
+ul li a:before
+{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background:#ff497c;
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scalex(0);
+    z-index: -1;
+}
+ul li a:hover:before
+{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+.search-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}

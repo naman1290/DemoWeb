@@ -1,0 +1,25 @@
+ul{
+    
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color:rgb(243, 184, 184);
+    list-style-type: square;
+    position: sticky;
+    padding: center;
+    display: flex;
+    list-style: none;
+}
+ul li
+{
+    margin: auto;
+}
+body{
+    /*background-color: #2b2525;*/ 
+}
+ul li a
+{
+    color:red;
+    font-size: 25px;
+    list-style: none;
+}

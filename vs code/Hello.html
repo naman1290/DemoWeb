@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My First Page</title>
+
+   <style>
+      .navbar {
+         background-color: rgb(255, 117, 145);
+         border-radius: 15px;
+         width: 100%;
+         margin: 0%;
+         padding: 0%;
+         position: fixed;
+      }
+
+      .navbar ul {
+         overflow: auto;
+      }
+
+      .navbar li {
+         float: left;
+         list-style: none;
+         margin: 20px;
+      }
+
+      .navbar li a {
+         font-family: 'Times New Roman', Times, serif;
+         font-style: italic;
+         padding: 20px 5px;
+         text-decoration: none;
+         font-size: 20px;
+         color: rgb(44, 34, 34)
+      }
+      .search{
+         float: right;
+         padding: 20px 50px;
+      }
+      .navbar input{
+         
+         border-radius: 25px;
+         padding: 5px 10px;
+      }
+      .body{
+         background-position: center;
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <header>
+      <nav class="navbar">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact us</a></li>
+
+            <div class="search">
+               <input type="text" name="search" id="search" placeholder="Search website">
+            </div>
+         </ul>
+         
+      </nav>
+   </header>
+   <img src="https://source.unsplash.com/user/erondu/1600x900">
+</body>
+
+</html>

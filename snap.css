@@ -1,0 +1,89 @@
+body
+{
+    margin: auto;
+    padding: auto;
+    align-items: left ;
+    height: auto;
+    background-blend-mode:overlay;
+    background-color: #112c38;
+    background-image:url(Snowy_Sunset_Goebel_2880_web-2560x1467.jpg);
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+@font-face
+{
+    font-family: jpweb;
+    src: url("Merienda-Bold");
+}
+ul
+{
+    list-style-type: square;
+    position: sticky;
+    margin: 30px;
+    padding-left: 800px;
+    display: flex;
+}
+ul li
+{
+    list-style:none;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li a
+{
+    display:inline-flex;
+    position:sticky;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 25px;
+    font-family:serif;
+    color:#fff;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+ul:hover li a
+{
+    transform: scale(1.5);
+    opacity: .2;
+    filter:blur(5px); 
+}
+ul li a:hover
+{
+    transform: scale(1.5);
+    opacity: 2;
+    filter: blur(0);
+}
+ul li a:before
+{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background:#FF499D;
+    transition: transform 0.5s;
+    transform-origin: center;
+    transform: scalex(0);
+    z-index: -1;
+}
+ul li a:hover:before
+{
+    transition: transform 0.5s;
+    transform-origin: center;
+    transform: scalex(1);
+}
+
+h1
+{
+    font-size: 5px;
+    font-family: cursive;
+    font-style: italic
+}
+
+
+
+

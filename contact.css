@@ -1,0 +1,99 @@
+body
+{
+    margin: auto;
+    padding: inherit;
+    background-image: url(videoblocks-maipo-canyon-chile-aerial-landscape-andes-mountains_sbijevkgf_thumbnail-full01.png);
+    background-position: center;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-color: #112c38;
+}
+div
+{
+    margin-left: 900px;
+    margin-top: -225px;
+}
+
+div1
+{
+    margin-left: 300px;
+    font-size: 30;
+    font-family: inherit;
+}
+div2
+{
+    margin-left: 300px;
+    font-size: 30;
+    font-family: inherit;
+}
+div3
+{
+    margin-left: 300px;
+    font-size: 25;
+    font-family: inherit;
+}
+div4
+{
+    margin-left: 300px;
+    font-size: 25;
+    font-family: inherit;
+}
+ul
+{
+    list-style-type: square;
+    position: sticky;
+    margin: 30px;
+    padding-left: 800px;
+    display: flex;
+}
+ul li
+{
+    list-style:none;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li a
+{
+    display:inline-flex;
+    position:sticky;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    color:#fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+ul:hover li a
+{
+    transform: scale(1.5);
+    opacity: .2;
+    filter:blur(5px); 
+}
+ul li a:hover
+{
+    transform: scale(1.5);
+    opacity: 2;
+    filter: blur(0);
+}
+ul li a:before
+{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background:#ff497c;
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scalex(0);
+    z-index: -1;
+}
+ul li a:hover:before
+{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scalex(1);
+}
